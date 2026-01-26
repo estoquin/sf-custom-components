@@ -1,0 +1,55 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span>Custom Dashboard</span>
+                    </h2>
+                    <p class="slds-text-body_small slds-text-color_weak">
+                        Sample D3 chart
+                    </p>
+                </div>
+            </header>
+            <div class="slds-no-print slds-col slds-align-middle slds-m-left_small">
+                <button class="slds-button slds-button_neutral" onclick={exportToPdf} aria-label="Export to PDF">Export to PDF</button>
+            </div>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="charts-grid">
+                <div class="chart-panel slds-box">
+                    <h3>Bar</h3>
+                    <div class="chart chart-bar"></div>
+                </div>
+                <div class="chart-panel slds-box">
+                    <h3>Line</h3>
+                    <div class="chart chart-line"></div>
+                </div>
+                <div class="chart-panel slds-box">
+                    <h3>Pie</h3>
+                    <div class="chart chart-pie"></div>
+                </div>
+                <div class="chart-panel slds-box">
+                    <h3>Scatter</h3>
+                    <div class="chart chart-scatter"></div>
+                </div>
+                <div class="chart-panel slds-box">
+                    <h3>Area</h3>
+                    <div class="chart chart-area"></div>
+                </div>
+                <div class="chart-panel slds-box">
+                    <h3>Grouped Bar</h3>
+                    <div class="chart chart-groupedbar"></div>
+                </div>
+                <div class="chart-panel slds-box">
+                    <h3>Donut</h3>
+                    <div class="chart chart-donut"></div>
+                </div>
+                <div class="chart-panel slds-box">
+                    <h3>Histogram</h3>
+                    <div class="chart chart-histogram"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

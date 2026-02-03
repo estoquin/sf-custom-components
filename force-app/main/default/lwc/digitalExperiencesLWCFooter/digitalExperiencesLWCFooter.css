@@ -6,11 +6,6 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(
-      135deg,
-      #d32f2f 0%,
-      #ef5350 50%,
-      #ffcdd2 100%
-    );
+    background: linear-gradient(135deg, #ff7a18 0%, #ffb347 50%, #ffd194 100%);
     text-align: center;
 }

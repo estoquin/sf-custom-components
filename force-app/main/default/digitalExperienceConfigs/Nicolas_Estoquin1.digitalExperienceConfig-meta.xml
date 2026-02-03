@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Nicolas Estoquin</label>
+    <site>
+        <urlPathPrefix>nicolasestoquin</urlPathPrefix>
+    </site>
+    <space>site/Nicolas_Estoquin1</space>
+</DigitalExperienceConfig>

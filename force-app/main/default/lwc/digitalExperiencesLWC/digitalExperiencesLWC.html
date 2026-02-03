@@ -1,0 +1,52 @@
+<template>
+    <section class="dx-hero container" role="region" aria-labelledby="dx-title">
+        <div class="dx-card" data-animation="float">
+            <div class="dx-content">
+                <h1 id="dx-title" class="dx-title">{title}</h1>
+                <p class="dx-subtitle">{subtitle}</p>
+                <form class="dx-form" onsubmit={handleSubmit} novalidate>
+                    <label class="field">
+                        <span class="label-text">Nombre</span>
+                        <input name="name" type="text" class="input" placeholder="Tu nombre" />
+                    </label>
+                    <label class="field">
+                        <span class="label-text">Email</span>
+                        <input name="email" type="email" class="input" placeholder="tu@ejemplo.com" />
+                    </label>
+
+                    <label class="field">
+                        <span class="label-text">Mensaje</span>
+                        <textarea name="message" class="textarea" rows="3" placeholder="¿En qué puedo ayudar?"></textarea>
+                    </label>
+
+                    <div class="dx-actions">
+                        <button type="submit" class="dx-btn dx-btn-primary">Enviar</button>
+                        <button type="button" class="dx-btn dx-btn-ghost" onclick={resetForm}>Limpiar</button>
+                    </div>
+                </form>
+                <template if:true={submitted}>
+                    <div class="dx-toast" role="status">Mensaje enviado — gracias.</div>
+                </template>
+                <div class="dx-cta">
+                    <a href={contactUrl} class="dx-btn dx-btn-link">Contactarme</a>
+                </div>
+            </div>
+            <div class="dx-visual" aria-hidden="true">
+                <svg class="svg-deco" width="180" height="180" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="g1" x1="0" x2="1">
+                            <stop offset="0" stop-color="#6EE7B7" />
+                            <stop offset="1" stop-color="#3B82F6" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" fill="url(#g1)" opacity="0.14" />
+                    <g opacity="0.28">
+                        <circle cx="50" cy="50" r="6" fill="#fff" />
+                        <circle cx="110" cy="30" r="4" fill="#fff" />
+                        <circle cx="120" cy="110" r="5" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+</template>

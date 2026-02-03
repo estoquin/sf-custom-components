@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+      135deg,
+      #d32f2f 0%,
+      #ef5350 50%,
+      #ffcdd2 100%
+    );
+    text-align: center;
+}

@@ -1,22 +1,9 @@
 :host {
     display: block;
-    height: 100%;
     width: 100%;
-    box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    color: #ffffff;
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 50%, #c084fc 100%);
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    color: #1a1a1a;
+    background: #f5f5f5;
 }
 
 .dx-hero .dx-card {
@@ -24,11 +11,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.25rem;
-    padding: 1.5rem;
-    border-radius: 14px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(250,250,250,0.86));
-    box-shadow: 0 12px 36px rgba(16,24,40,0.08);
-    border: 1px solid rgba(15,23,42,0.04);
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    border: 1px solid #e5e5e5;
     width: 100%;
     align-items: stretch;
 }
@@ -38,15 +24,13 @@
     font-size: 1.375rem;
     line-height: 1.1;
     font-weight: 700;
-    color: #0b1220;
-    animation: fadeInUp .6s ease both;
+    color: #1a1a1a;
 }
 
 .dx-subtitle {
     margin: 0 0 1rem 0;
-    color: #334155;
+    color: #666666;
     font-size: 0.975rem;
-    animation: fadeInUp .7s ease both;
 }
 
 .dx-content {
@@ -65,59 +49,40 @@
 }
 
 .field { display: flex; flex-direction: column; }
-.label-text { font-size: 0.78rem; color: #94a3b8; margin-bottom: 0.25rem; }
+.label-text { font-size: 0.78rem; color: #999999; margin-bottom: 0.25rem; font-weight: 500; }
 .input, .textarea {
     padding: 0.56rem 0.65rem;
-    border-radius: 8px;
-    border: 1px solid rgba(15,23,42,0.06);
-    background: #fff;
+    border: 1px solid #d4d4d4;
+    background: #ffffff;
     font-size: 0.95rem;
 }
 .textarea { grid-column: 1 / -1; resize: vertical; }
 
 .dx-actions { grid-column: 1 / -1; display:flex; gap:0.5rem; margin-top:0.5rem }
 
-.dx-btn { display: inline-block; color: #fff; text-decoration: none; padding: 0.5rem 0.9rem; border-radius: 8px; font-weight:600 }
-.dx-btn-primary { background: linear-gradient(90deg,#06b6d4,#3b82f6); box-shadow: 0 8px 18px rgba(59,130,246,0.12); }
-.dx-btn-ghost { background: transparent; color:#334155; border:1px solid rgba(15,23,42,0.06); }
-.dx-btn-link { background: transparent; color:#3b82f6; padding:0.45rem 0.7rem }
-
-.dx-visual { flex: 0 0 180px; display:flex; align-items:center; justify-content:center }
-.svg-deco { transform-origin: center; animation: float 6s ease-in-out infinite; }
+.dx-btn { display: inline-block; color: #fff; text-decoration: none; padding: 0.5rem 0.9rem; font-weight:600; cursor: pointer; }
+.dx-btn-primary { background: #1a1a1a; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.dx-btn-ghost { background: transparent; color:#1a1a1a; border:1px solid #d4d4d4; }
+.dx-btn-link { background: transparent; color:#1a1a1a; padding:0.45rem 0.7rem; text-decoration: underline; }
 
 .dx-toast {
     margin-top: 0.6rem;
     padding: 0.55rem 0.75rem;
-    background: rgba(34,197,94,0.08);
-    color: #064e3b;
-    border-radius: 8px;
+    background: #e5e5e5;
+    color: #1a1a1a;
+    border: 1px solid #d4d4d4;
     font-weight:600;
-    animation: pop .35s ease both;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from { opacity:0; transform: translateY(8px); }
-    to { opacity:1; transform: translateY(0); }
+.dx-experience {
+    margin-bottom: 2rem;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 2rem;
 }
-
-@keyframes float {
-    0% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-8px) rotate(3deg); }
-    100% { transform: translateY(0) rotate(0deg); }
+.dx-experience-title {
+    color: #fff;
 }
-
-@keyframes pop {
-    from { opacity:0; transform: scale(.96); }
-    to { opacity:1; transform: scale(1); }
-}
-
-/* Responsive */
-@media (max-width: 880px) {
-    .dx-form { grid-template-columns: 1fr; }
-    .dx-visual { display:none }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .svg-deco, .dx-title, .dx-subtitle, .dx-toast { animation: none !important }
+.dx-experience-list {
+    color: #fff;
 }
